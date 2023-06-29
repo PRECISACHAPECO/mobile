@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors({ origin: '*' }));
 
 
-app.get("/api/teste", async (req, res) => {
+app.get("/teste", async (req, res) => {
     try {
         const cpf = req.query.cpf
         const sql = `SELECT * FROM cliente where cpf="${cpf}"`;
